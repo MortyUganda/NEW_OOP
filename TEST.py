@@ -1,2 +1,8 @@
-print([el for el in range(8, 0,-1)])
-print(89)
+a = int(input())
+b = int(input())
+if a < b:
+    print(*list(range(a, b+1)))
+elif a > b:
+    print(*list(range(a, b-1, -1)))
+else: 
+    print(a)
