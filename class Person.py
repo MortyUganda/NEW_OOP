@@ -4,15 +4,9 @@ class Person:
         self.surname = surname
 
     def get_name(self):
-        return self._name
+        return self.name + ' ' + self.surname
     
-    def get_surmame(self):
-        return self._surname
-    
-    def set_name(self, name):
-        self._name = name
-    
-    def set_surname(self, surname):
-        self._surname = surname
+    def set_name(self, info):
+        self.name, self.surname = info.split()
 
-    fullname = property()
+    fullname = property(get_name, set_name)
