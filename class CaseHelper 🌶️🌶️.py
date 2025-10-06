@@ -11,4 +11,5 @@ class CaseHelper :
     @staticmethod
     def to_upper_camel(stroka):
         pass
+    asd
     
